@@ -9,7 +9,7 @@ function CtaContent() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0.2 });
+    const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }); } }, { threshold: 0.2 });
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
@@ -154,7 +154,7 @@ export default function Home() {
             A premier educational institution in Uttarakhand, nurturing young minds since 1995 through academic excellence and holistic development.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Link to="/admissions" className="bg-[#C0152A] text-white px-8 py-4 rounded-md text-sm font-bold hover:bg-[#a01223] transition-all min-h-[52px] text-center" style={{ animation: 'subtlePulse 2s ease-in-out infinite, colorBlink 0.75s ease-in-out infinite' }} data-testid="hero-apply-btn">Apply Now</Link>
+            <Link to="/admissions" className="bg-[#C0152A] text-white px-8 py-4 rounded-md text-sm font-bold hover:bg-[#a01223] transition-all min-h-[52px] text-center" style={{ animation: 'subtlePulse 2s ease-in-out infinite, colorBlink 1.5s ease-in-out infinite' }} data-testid="hero-apply-btn">Apply Now</Link>
             <Link to="/about" className="border-2 border-white text-white px-8 py-4 rounded-md text-sm font-bold hover:bg-white hover:text-[#1A2E6C] transition-all min-h-[52px] text-center" data-testid="hero-explore-btn">Explore School</Link>
           </div>
         </div>

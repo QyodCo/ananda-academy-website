@@ -5,7 +5,7 @@ import ScrollReveal from '../components/ScrollReveal';
 
 function CtaContent() {
   const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(window.innerWidth < 768 ? true : false);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;

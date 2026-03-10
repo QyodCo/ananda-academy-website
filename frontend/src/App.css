@@ -1,0 +1,232 @@
+/* Announcement Ticker - Pure CSS */
+@keyframes ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+    display: inline-flex;
+    animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker-track:hover {
+    animation-play-state: paused;
+}
+
+/* Hero Slideshow */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Scroll Reveal */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Page Fade In */
+.page-enter {
+    animation: pageFadeIn 0.4s ease-out;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Carousel Arrow */
+.carousel-arrow {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    border: none;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background: #f5f5f5;
+    transform: scale(1.08);
+}
+
+/* Card Hover */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Section Label */
+.section-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #C0152A;
+    margin-bottom: 0.5rem;
+}
+
+/* Active Nav Link */
+.nav-link-active {
+    color: #C0152A !important;
+    position: relative;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #C0152A;
+    border-radius: 2px;
+}
+
+/* Responsive Headings */
+.heading-h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: 'Playfair Display', serif;
+}
+
+.heading-h2 {
+    font-size: clamp(1.5rem, 3.5vw, 2.8rem);
+    font-family: 'Playfair Display', serif;
+}
+
+.body-text {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #1A2E6C; border-radius: 4px; }
+
+/* Lightbox */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Dot indicator */
+.slide-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slide-dot.active {
+    background: #C0152A;
+    border-color: #C0152A;
+    transform: scale(1.2);
+}
+
+/* Wavy Section Divider */
+.wavy-divider {
+    width: 100%;
+    height: 40px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40'%3E%3Cpath fill='%23C0152A' fill-opacity='0.1' d='M0,20 C240,0 480,40 720,20 C960,0 1200,40 1440,20 L1440,40 L0,40 Z'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* Decorative patterns */
+.pattern-dots {
+    background-image: radial-gradient(circle, #C0152A 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.05;
+}
+
+.pattern-grid {
+    background-image: 
+        linear-gradient(rgba(26,46,108,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26,46,108,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+/* Hero heading color cycle animation */
+@keyframes colorCycle {
+    0%, 100% { color: white; }
+    25% { color: #FF6B6B; }
+    50% { color: white; }
+    75% { color: #FFD700; }
+}
+
+/* Welcome badge pulse animation */
+@keyframes welcomePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Subtle pulse for Apply Now button */
+@keyframes subtlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Apply Now button color blink */
+@keyframes colorBlink {
+    0%, 100% { background-color: #C0152A; }
+    33% { background-color: #FF4500; }
+    66% { background-color: #1A2E6C; }
+}
+
+/* Tagline shimmer glow animation */
+@keyframes taglineGlow {
+    0%, 100% { text-shadow: 0 0 10px rgba(192, 21, 42, 0); }
+    50% { text-shadow: 0 0 20px rgba(192, 21, 42, 0.6), 0 0 40px rgba(192, 21, 42, 0.3); }
+}
+
+/* CTA Parallax */
+.cta-parallax {
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    .cta-parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* CTA staggered fade-in slide-up */
+@keyframes ctaFadeUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.cta-stagger-1 { animation: ctaFadeUp 0.6s ease both; }
+.cta-stagger-2 { animation: ctaFadeUp 0.6s ease 0.2s both; }
+.cta-stagger-3 { animation: ctaFadeUp 0.6s ease 0.4s both; }
+.cta-stagger-4 { animation: ctaFadeUp 0.6s ease 0.6s both; }

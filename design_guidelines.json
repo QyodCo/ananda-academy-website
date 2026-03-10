@@ -1,0 +1,145 @@
+{
+  "brand_identity": {
+    "name": "ANANDA ACADEMY",
+    "tagline": "The Joy of Learning",
+    "established": "1995",
+    "location": "Uttarakhand, India",
+    "logo_url": "https://customer-assets.emergentagent.com/job_13076bab-5622-4e99-ae60-ea7649763768/artifacts/hg8kvk8j_images%20%281%29.jpg",
+    "emotional_tone": "Prestigious, Joyful, Academic, Trustworthy, Serene",
+    "theme_mode": "light"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Playfair Display, serif",
+      "weights": ["400", "600", "700"],
+      "usage": "All section titles, hero headlines, and feature cards. Must use tight tracking (tracking-tight)."
+    },
+    "body": {
+      "font_family": "DM Sans, sans-serif",
+      "weights": ["400", "500", "700"],
+      "usage": "Paragraphs, navigation, buttons, and detailed text."
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tighter leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "p": "text-base md:text-lg leading-relaxed text-gray-700"
+    }
+  },
+  "colors": {
+    "primary": {
+      "main": "#C0152A",
+      "name": "Deep Red",
+      "usage": "Primary buttons, active states, borders, key highlights."
+    },
+    "secondary": {
+      "main": "#1A2E6C",
+      "name": "Navy Blue",
+      "usage": "Headings, Footer background, Text accents, Navbar text."
+    },
+    "background": {
+      "main": "#FFFFFF",
+      "alt": "#F5F5F5",
+      "usage": "Main is pure white. Alt is for alternating sections to create rhythm."
+    },
+    "text": {
+      "primary": "#1A2E6C",
+      "secondary": "#4B5563",
+      "inverse": "#FFFFFF"
+    }
+  },
+  "visual_enhancers": {
+    "border_radius": "rounded-md",
+    "shadows": "shadow-[0_4px_20px_-2px_rgba(26,46,108,0.1)]",
+    "textures": "Subtle noise or paper texture overlay on #F5F5F5 sections to avoid digital flatness.",
+    "gradients": "NONE. Use solid colors or very subtle mesh gradients only if absolutely necessary for hero backgrounds (White to extremely pale blue)."
+  },
+  "layout_strategies": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": "Generous. Section padding: py-20 or py-24. Element gaps: gap-8 or gap-12.",
+    "grid_system": {
+      "bento_grid": "Use for Infrastructure and Gallery. Mix col-span-2 and col-span-1 tiles.",
+      "cards": "Clean, white background, subtle border (border-gray-100), hover:shadow-lg transition-all duration-300."
+    },
+    "mobile_rules": "All grids collapse to 1 column. Tab switchers must be vertical stacked (Accordion style or Vertical Pills)."
+  },
+  "components": {
+    "navbar": {
+      "style": "Sticky, White Background, Red Bottom Border (border-b-4 border-[#C0152A]).",
+      "links": "Navy Blue text, hover:text-red-700 font-medium."
+    },
+    "buttons": {
+      "primary": "bg-[#C0152A] text-white hover:bg-[#a01223] px-8 py-3 rounded-md font-medium transition-transform hover:-translate-y-0.5",
+      "outline": "border-2 border-[#1A2E6C] text-[#1A2E6C] hover:bg-[#1A2E6C] hover:text-white px-8 py-3 rounded-md font-medium"
+    },
+    "cards": {
+      "feature": "White bg, p-8, border-l-4 border-[#C0152A] hover:border-l-8 transition-all."
+    },
+    "marquee": {
+      "style": "Pure CSS animation. Background: #1A2E6C. Text: White. Slow, smooth scroll."
+    },
+    "stats_bar": {
+      "style": "Simple, Typography-focused. Large numbers in Red, labels in Navy."
+    }
+  },
+  "image_urls": {
+    "hero_slides": [
+      {
+        "url": "https://images.unsplash.com/photo-1680084521816-cc1ad0433ceb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBzY2hvb2wlMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZSUyMGluZGlhJTIwY2FtcHVzfGVufDB8fHx8MTc3MTgyNzI4Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Ananda Academy Main Campus Building",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1698993081947-8a3654303904?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2OTV8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzY2hvb2wlMjBzdHVkZW50cyUyMGhhcHB5JTIwY2xhc3Nyb29tJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzcxODI3Mjg4fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Students engaged in classroom learning",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.pexels.com/photos/8927023/pexels-photo-8927023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Students playing football on school grounds",
+        "category": "hero"
+      }
+    ],
+    "about": {
+      "principal": "https://images.pexels.com/photos/33871730/pexels-photo-33871730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "vision": "https://images.unsplash.com/photo-1758685733987-54952cd1c8c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxzY2hvb2wlMjBzY2llbmNlJTIwbGFiJTIwc3R1ZGVudHMlMjBleHBlcmltZW50fGVufDB8fHx8MTc3MTgyNzI4OHww&ixlib=rb-4.1.0&q=85"
+    },
+    "infrastructure": [
+      {
+        "url": "https://images.unsplash.com/photo-1769650796510-069f76e2a8ae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxzY2hvb2wlMjBsaWJyYXJ5JTIwaW50ZXJpb3IlMjBib29rcyUyMHJlYWRpbmd8ZW58MHx8fHwxNzcxODI3Mjg5fDA&ixlib=rb-4.1.0&q=85",
+        "title": "Modern Library"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758685734153-132c8620c1bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzY2llbmNlJTIwbGFiJTIwc3R1ZGVudHMlMjBleHBlcmltZW50fGVufDB8fHx8MTc3MTgyNzI4OHww&ixlib=rb-4.1.0&q=85",
+        "title": "Advanced Science Labs"
+      },
+      {
+        "url": "https://images.pexels.com/photos/28203486/pexels-photo-28203486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "title": "Safe Transport"
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1680084521806-b408d976e3e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBzY2hvb2wlMjBidWlsZGluZyUyMGFyY2hpdGVjdHVyZSUyMGluZGlhJTIwY2FtcHVzfGVufDB8fHx8MTc3MTgyNzI4Nnww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1765372674571-afef5d3771b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHxzY2hvb2wlMjBzcG9ydHMlMjBraWRzJTIwcGxheWluZyUyMGZvb3RiYWxsJTIwZmllbGR8ZW58MHx8fHwxNzcxODI3Mjg5fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1762475833776-fd57865db4d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxzY2hvb2wlMjBsaWJyYXJ5JTIwaW50ZXJpb3IlMjBib29rcyUyMHJlYWRpbmd8ZW58MHx8fHwxNzcxODI3Mjg5fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1758685733987-54952cd1c8c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxzY2hvb2wlMjBzY2llbmNlJTIwbGFiJTIwc3R1ZGVudHMlMjBleHBlcmltZW50fGVufDB8fHx8MTc3MTgyNzI4OHww&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: The theme is LIGHT ONLY. Do not use dark backgrounds for sections other than the Footer.",
+    "NAVIGATION: Use 'Playfair Display' for the brand name in the navbar. Links should be 'DM Sans'.",
+    "TICKER: Implement the announcement ticker using PURE CSS (keyframes translate-x). Do not use heavy libraries.",
+    "HERO: Use a library like 'react-slick' or 'framer-motion' for the slideshow. Ensure images have a subtle 'zoom-out' (Ken Burns) effect.",
+    "ACCESSIBILITY: Ensure all Red (#C0152A) text is on White background. If using Red background, text must be White.",
+    "FORMS: Use Shadcn components for inputs but style them with a Red focus ring (ring-red-500) instead of the default black/blue.",
+    "MOBILE: The academic curriculum tabs must stack vertically on mobile screens. Do not use horizontal scrolling tabs.",
+    "ANTI-AI: Avoid 'Inter' font. Use the specified 'DM Sans' and 'Playfair Display'. Avoid 50% gray text; use Navy Blue for subheadings."
+  ],
+  "universal_guidelines": [
+    "Do not use generic AI-assistant emojis.",
+    "Interactive elements must have data-testid attributes.",
+    "Use sonner for toasts.",
+    "Prioritize Shadcn UI components for complex interactions (Dialog, Select, Tabs).",
+    "Use standard HTML/Tailwind for layout structures (Grid, Flex)."
+  ]
+}

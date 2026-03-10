@@ -123,7 +123,6 @@ export default function Footer() {
               <span className="text-white/75" style={{ fontSize: '13px' }}>Designed by&nbsp;</span>
               <a href="https://www.instagram.com/qyodco_" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-0 text-white/75 hover:text-[#FF4500] hover:opacity-100" style={{ transition: '0.3s ease', textDecoration: 'none' }} data-testid="bomb-code-credit">
                 <img src="/qyod-co logo.png" alt="Qyod Co." style={{ height: '36px', width: 'auto', verticalAlign: 'middle', display: 'inline-block', margin: '0' }} />
-                <span className="font-bold text-white" style={{ fontSize: '13px' }}>Qyod Co.</span>
               </a>
             </span>
           </div>

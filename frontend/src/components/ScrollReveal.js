@@ -13,7 +13,7 @@ export default function ScrollReveal({ children, className = '', delay = 0 }) {
           observer.unobserve(el);
         }
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0, rootMargin: '50px 0px 0px 0px' }
     );
     observer.observe(el);
     return () => observer.disconnect();

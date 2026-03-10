@@ -7,12 +7,16 @@ function CtaContent() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0, rootMargin: '0px 0px 100px 0px' });
- obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
+  if (window.innerWidth < 768) {
+    setVisible(true);
+    return;
+  }
+  const el = ref.current;
+  if (!el) return;
+  const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) { setVisible(true); obs.disconnect(); } }, { threshold: 0.1 });
+  obs.observe(el);
+  return () => obs.disconnect();
+}, []);
   return (
     <div ref={ref} className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-[70px] md:py-[100px]">
       <div className="max-w-[700px]">
